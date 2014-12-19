@@ -1,0 +1,11 @@
+aliases:
+  - 'default'
+  - 'watch'
+watch:
+  files:
+    - 'Gruntfile.js'
+    - 'lib/**/*.js'
+    - 'test/**/*.js'
+  tasks:
+    - 'scripts'
+

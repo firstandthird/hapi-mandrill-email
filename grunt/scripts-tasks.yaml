@@ -1,0 +1,13 @@
+aliases:
+  - 'jshint'
+  - 'shell'
+jshint:
+  - 'Gruntfile.js'
+  - 'lib/**/*.js'
+  - 'test/**/*.js'
+shell:
+  command: './node_modules/.bin/lab -l -C test/*.test.js'
+  options:
+    stdout: true
+    stderr: true
+    color: true
