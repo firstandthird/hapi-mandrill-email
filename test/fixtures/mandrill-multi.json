@@ -1,0 +1,226 @@
+
+{ "mandrill_events": [
+  {
+    "event": "test"
+  },
+  {
+    "event": "inbound",
+    "ts": 1403904565,
+    "msg": {
+      "raw_msg": "Received: from st11p02mm-asmtp002.mac.com (unknown [17.111.110.217])\\n\\tby ip-10-200-1-110 (Postfix) with ESMTPS id 88E9F2038D;\\n\\tFri, 27 Jun 2014 21:29:25 +0000 (UTC)\\nMIME-version: 1.0\\nContent-transfer-encoding: 7BIT\\nContent-type: text\\\/plain\\nReceived: from hostname.domain\\n (pool-71-119-99-179.lsanca.fios.verizon.net [71.119.99.179])\\n by st11p02mm-asmtp002.mac.com\\n (Oracle Communications Messaging Server 7u4-27.10(7.0.4.27.9) 64bit (built Jun\\n  6 2014)) with ESMTPSA id <0N7U00FF1JOS0S50@st11p02mm-asmtp002.mac.com>; Fri,\\n 27 Jun 2014 21:29:17 +0000 (GMT)\\nSubject: ccc\\\/bcc test\\nFrom: Test Dude <test@example.com>\\nDate: Fri, 27 Jun 2014 14:29:16 -0700\\nCc: test2@example.com\\nMessage-id: <283579CB-7D58-40D0-9B1F-0D00E7971E1D@me.com>\\nTo: test2@example.com\\nX-Mailer: Apple Mail (2.1878.2)\\nX-MANTSH: 1TEIXWV4bG1oaGkdHB0lGUkdDRl5PWBoaHREKTEMXGx0EGx0YBBIZBBscEBseGh8\\n\\tpGmIlCkJMF2NbZm9PWRIcS39ZEQpCbBdkSWlrc1tQXURgexEKQkAXY3xsW0hQEl9DaVkRCnBsF\\n\\t214c2hzRmJwb25yEQ==\\nX-CLX-Spam: false\\nX-CLX-Score: 1011\\nX-Proofpoint-Virus-Version: vendor=fsecure\\n engine=2.50.10432:5.12.52,1.0.14,0.0.0000\\n definitions=2014-06-27_06:2014-06-27,2014-06-27,1970-01-01 signatures=0\\nX-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0\\n suspectscore=4 phishscore=0 adultscore=0 bulkscore=0 classifier=spam adjust=0\\n reason=mlx scancount=1 engine=7.0.1-1402240000 definitions=main-1406270230",
+      "headers": {
+        "X-Sentby-Alias": 1
+      },
+      "text": null,
+      "text_flowed": false,
+      "from_email": "test@example.com",
+      "from_name": "Test Dude",
+      "to": [
+        [
+          "test1@example.com",
+          null
+        ]
+      ],
+      "cc": [
+        [
+          "test3@example.com",
+          null
+        ]
+      ],
+      "subject": "ccc\\\/bcc test",
+      "spf": {
+        "result": "pass",
+        "detail": "sender SPF authorized"
+      },
+      "spam_report": {
+        "score": -1,
+        "matched_rules": [
+          {
+            "name": "RCVD_IN_DNSWL_MED",
+            "score": -2.3,
+            "description": "RBL: Sender listed at http:\\\/\\\/www.dnswl.org\\\/, medium"
+          },
+          {
+            "name": null,
+            "score": 0,
+            "description": null
+          },
+          {
+            "name": "listed",
+            "score": 0,
+            "description": "in list.dnswl.org]"
+          },
+          {
+            "name": "RDNS_NONE",
+            "score": 1.3,
+            "description": "Delivered to internal network by a host with no rDNS"
+          },
+          {
+            "name": "TVD_SPACE_RATIO",
+            "score": 0,
+            "description": "TVD_SPACE_RATIO"
+          }
+        ]
+      },
+      "dkim": {
+        "signed": false,
+        "valid": false
+      },
+      "email": "test3@example.com",
+      "tags": [
+
+      ],
+      "sender": null,
+      "template": null
+    }
+  },
+  {
+    "event": "inbound",
+    "ts": 1404174337,
+    "msg": {
+      "raw_msg": "Received: from smtp117.ord1c.emailsrvr.com (unknown [108.111.41.111])\n\tby ip-10-111-3-110 (Postfix) with ESMTPS id 2EA8820251\n\tfor <test@example.com>; Tue,  1 Jul 2014 00:25:32 +0000 (UTC)\nReceived: from localhost (localhost.localdomain [127.0.0.1])\n\tby smtp15.relay.ord1c.emailsrvr.com (SMTP Server) with ESMTP id E6F4E3811C4\n\tfor <test@example.com>; Mon, 30 Jun 2014 20:25:26 -0400 (EDT)\nX-Virus-Scanned: OK\nReceived: by smtp15.relay.ord1c.emailsrvr.com (Authenticated sender: dude-AT-example.com) with ESMTPSA id 705DC3806F4\n\tfor <test@example.com>; Mon, 30 Jun 2014 20:25:26 -0400 (EDT)\nFrom: Test Dude <test@example.com>\nContent-Type: image/png; name=\"ss2.png\"\nContent-Transfer-Encoding: base64\nSubject: attach3\nMessage-Id: <062E4C90-FE0A-4D24-9C70-1FADE07B0799@example.com>\nDate: Mon, 30 Jun 2014 17:25:25 -0700\nTo: test@example.com\nMime-Version: 1.0 (Mac OS X Mail 7.3 \\(1878.2\\))\nContent-Disposition: inline; filename=ss2.png\nX-Mailer: Apple Mail (2.1878.2)\n\niVBORw0KGgoAAAANSUhEUgAAAq4AAAD2CAYAAAAXvQW1AAAKQWlDQ1BJQ0MgUHJvZmlsZQAASA2d\nuqsbui688ML6JQISDxZBYSy/Kgs/YVuhbe5Y9iqLQ84+zA/b9bH9yE55XXy7Thy7LeXbX2wTpr0D\nG+bF7Tsd+lM/PVdhvm1T/lxme/lQiPNd1+VOt8WxfehXdd2u/bg8rqdy5bk8rKfjMC1b57meY/n4\nX2etAk5Vk8r0AAAAAElFTkSuQmCC",
+      "headers": {
+      },
+      "attachments": {
+        "ss2.png": {
+          "name": "ss2.png",
+          "type": "image/png",
+          "content": "123"
+        }
+      },
+      "images": {
+        "ss2.png": {
+          "name": "ss2.png",
+          "type": "image/png",
+          "content": "123"
+        }
+      },
+      "from_email": "member@example.com",
+      "from_name": "Test Dude",
+      "to": [
+        [
+          "test3@example.com",
+          null
+        ]
+      ],
+      "subject": "attach3",
+      "spf": {
+        "result": "none",
+        "detail": ""
+      },
+      "spam_report": {
+        "score": 1.3,
+        "matched_rules": [
+          {
+            "name": "RCVD_IN_DNSWL_NONE",
+            "score": 0,
+            "description": "RBL: Sender listed at http://www.dnswl.org/, no"
+          },
+          {
+            "name": null,
+            "score": 0,
+            "description": null
+          },
+          {
+            "name": "listed",
+            "score": 0,
+            "description": "in list.dnswl.org]"
+          },
+          {
+            "name": "RDNS_NONE",
+            "score": 1.3,
+            "description": "Delivered to internal network by a host with no rDNS"
+          },
+          {
+            "name": "TVD_SPACE_RATIO",
+            "score": 0,
+            "description": "TVD_SPACE_RATIO"
+          },
+          {
+            "name": "TO_NO_BRKTS_NORDNS",
+            "score": 0,
+            "description": "To: misformatted and no rDNS"
+          }
+        ]
+      },
+      "dkim": {
+        "signed": false,
+        "valid": false
+      },
+      "email": "test3@example.com",
+      "tags": [],
+      "sender": null,
+      "template": null
+    }
+  },
+  {
+    "event": "inbound",
+    "ts": 1403904565,
+    "msg": {
+      "raw_msg": "Received: from st11p02mm-asmtp002.mac.com (unknown [17.172.220.237])\\n\\tby ip-10-220-3-120 (Postfix) with ESMTPS id 88E9F2038D;\\n\\tFri, 27 Jun 2014 21:29:25 +0000 (UTC)\\nMIME-version: 1.0\\nContent-transfer-encoding: 7BIT\\nContent-type: text\\\/plain\\nReceived: from localhost\\n (pool-71-119-99-179.lsanca.fios.verizon.net [71.119.99.179])\\n by st11p02mm-asmtp002.mac.com\\n (Oracle Communications Messaging Server 7u4-27.10(7.0.4.27.9) 64bit (built Jun\\n  6 2014)) with ESMTPSA id <0N7U00FF1JOS0S50@st11p02mm-asmtp002.mac.com>; Fri,\\n 27 Jun 2014 21:29:17 +0000 (GMT)\\nSubject: ccc\\\/bcc test\\nFrom: Test Dude <test@example.com>\\nDate: Fri, 27 Jun 2014 14:29:16 -0700\\nCc: test2@example.com\\nMessage-id: <283579CB-7D58-40D0-9B1F-0D00E7971E1D@me.com>\\nTo: test1@example.com\\nX-Mailer: Apple Mail (2.1878.2)\\nX-MANTSH: 1TEIXWV4bG1oaGkdHB0lGUkdDRl5PWBoaHREKTEMXGx0EGx0YBBIZBBscEBseGh8\\n\\taEQpYTRdLEQptfhcaEQpMWRcbGhsbEQpZSRcRClleF2hjeREKQ04XSxsbGmJCH2lhGEd+GXhzB\\n\\tx94GBsYE2IfEQpFQxcWGBIZHx0TaWgHHW4fEgceGm4aBxNoG2wHGm4aGm8dEx0bbxtuakdPBEl\\n\\tFRxQRClhcFxkEGgQbHgdNThwTGhodEwUbHQQbHRgEEhkEGxwQGx4aHxsRCl5ZF2EeHkhjEQpDW\\n\\thcdGwQbGxMEExMEGx0TEQpEWBcZEQpESRcbEQpCRRdtSVtFX2UeeWBLTxEKQk4XbHBgeUAdYlJ\\n\\tpGmIRCkJMF2NbZm9PWRIcS39ZEQpCbBdkSWlrc1tQXURgexEKQkAXY3xsW0hQEl9DaVkRCnBsF\\n\\t214c2hzRmJwb25yEQ==\\nX-CLX-Spam: false\\nX-CLX-Score: 1011\\nX-Proofpoint-Virus-Version: vendor=fsecure\\n engine=2.50.10432:5.12.52,1.0.14,0.0.0000\\n definitions=2014-06-27_06:2014-06-27,2014-06-27,1970-01-01 signatures=0\\nX-Proofpoint-Spam-Details: rule=notspam policy=default score=0 spamscore=0\\n suspectscore=4 phishscore=0 adultscore=0 bulkscore=0 classifier=spam adjust=0\\n reason=mlx scancount=1 engine=7.0.1-1402240000 definitions=main-1406270230",
+      "headers": {
+      },
+      "text": null,
+      "text_flowed": false,
+      "from_email": "member@example.com",
+      "from_name": "Test Dude",
+      "to": [
+        [
+          "test3@example.com",
+          null
+        ]
+      ],
+      "cc": [
+        [
+          "test4@example.com",
+          null
+        ]
+      ],
+      "subject": "ccc\\\/bcc test",
+      "spf": {
+        "result": "pass",
+        "detail": "sender SPF authorized"
+      },
+      "spam_report": {
+        "score": -1,
+        "matched_rules": [
+          {
+            "name": "RCVD_IN_DNSWL_MED",
+            "score": -2.3,
+            "description": "RBL: Sender listed at http:\\\/\\\/www.dnswl.org\\\/, medium"
+          },
+          {
+            "name": null,
+            "score": 0,
+            "description": null
+          },
+          {
+            "name": "listed",
+            "score": 0,
+            "description": "in list.dnswl.org]"
+          },
+          {
+            "name": "RDNS_NONE",
+            "score": 1.3,
+            "description": "Delivered to internal network by a host with no rDNS"
+          },
+          {
+            "name": "TVD_SPACE_RATIO",
+            "score": 0,
+            "description": "TVD_SPACE_RATIO"
+          }
+        ]
+      },
+      "dkim": {
+        "signed": false,
+        "valid": false
+      },
+      "email": "test3@example.com",
+      "tags": [
+
+      ],
+      "sender": null,
+      "template": null
+    }
+  }
+]}
